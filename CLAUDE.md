@@ -8,15 +8,21 @@ Single-file web game: `tictactoe.html`. No build step, no dependencies, no packa
 
 ## Git workflow
 
-After every meaningful change: commit with a descriptive message and push to `origin/master`.
+**Commit and push after every meaningful change.** Never leave work uncommitted at the end of a task. This ensures the project is always recoverable and easy to roll back.
+
+- Stage only the relevant files (not `git add .`)
+- Write a clean commit message: short imperative subject line, optional body explaining the why
+- Push immediately after committing
 
 ```bash
-git add tictactoe.html
-git commit -m "subject line\n\nbody if needed"
+git add <changed-files>
+git commit -m "Short subject line
+
+Optional body explaining why, not what."
 git push
 ```
 
-GitHub repo: https://github.com/castrotino102-coder/tic-tac-toe
+GitHub repo: https://github.com/castrotino102-coder/tic-tac-toe (branch: `master`)
 
 ## Architecture
 
